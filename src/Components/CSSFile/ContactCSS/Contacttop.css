@@ -1,0 +1,44 @@
+.Contact_top_elements{
+    position: relative;
+    color: rgba(26, 25, 25, 0.1);
+}
+
+.Contact_top_content {
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+.Contact_top_heading_size:nth-child(2),
+.Contact_top_heading_size:nth-child(3) {
+  font-size: 10vh;
+}
+.Contact_top_heading_size:nth-child(2){
+    color: #FFD700;
+}
+.Contact_top_btn{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 80%;
+}
+.Contact_top_btn button {
+    padding: 10px 15px;
+    border-radius: 7px;
+    outline: none;
+    border: none;
+    background-color: #FFD700;
+    color: black;
+    font-weight: 600;
+    transition: box-shadow 0.5s ease;
+    /* transition: background-color 0.5s ease; */
+    cursor: pointer;
+}
+.Contact_top_btn button:hover {
+    /* background-color: #d3b50b; */
+    /* color: white; */
+    box-shadow: 0px 4px 5px rgba(255, 255, 0, 0.7), 0px 0px 20px rgba(255, 255, 0, 0.5);
+}
+.Contact_bottom_text{
+    padding: 20px;
+}
