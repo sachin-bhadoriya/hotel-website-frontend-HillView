@@ -4,8 +4,13 @@
     overflow: hidden;
   }
   
+  .room_type_container_main {
+    margin: 25px auto;
+  }
   .txt_room_type{
-    margin: auto;
+    font-family: "Nunito", sans-serif;
+    font-weight: 300;
+    margin: 10px auto;
   }
   .room_type_image_container img {
     width: 100%;

@@ -13,14 +13,15 @@ const Roomtop = () => {
 
   return (
     <>
-      <div data-aos="fade-up" className="Room_top_elements" style={style}>
-        <div className="Room_top_content">
-          <h3 data-aos="slide-right" className='Room_top_heading_size'>WELCOME TO</h3>
-          <h1 data-aos="slide-right" className='Room_top_heading_size'>HILLVIEW ESCAPE</h1>
-          <h3 data-aos="slide-right" className='Room_top_heading_size'>HOTELS</h3>
-          <p data-aos="slide-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, maiores.</p>
+      <div data-aos="fade-up" className="home_top_elements" style={style}>
+        <div className="home_top_content">
+        {/* all css define in app.css */}
+          <h3 data-aos="slide-right" className='home_top_heading_size'>WELCOME TO</h3>
+          <h1 data-aos="slide-right" className='home_top_heading_size'>HILLVIEW ESCAPE</h1>
+          <h3 data-aos="slide-right" className='home_top_heading_size'>HOTELS</h3>
+          <p data-aos="slide-right" className='home_top_para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, maiores.</p>
         </div>
-        <div className="Room_top_btn">
+        <div className="home_top_btn">
           <button>BOOK NOW</button>
         </div>
       </div>

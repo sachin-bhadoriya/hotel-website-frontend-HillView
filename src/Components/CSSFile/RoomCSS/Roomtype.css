@@ -25,15 +25,20 @@
     background-color: yellow;
     padding: 15px 30px;
     font-size: 1.2rem;
-    transition: background-color 0.5s ease;
+    transition: background-color 2s ease, color 0.5s ease;
     border-radius: 10px;
     box-shadow: 5px 5px 5px rgb(124, 124, 16);
+    font-family: "Montserrat", sans-serif;
+
 }
 .room_images_type button:hover{
     cursor: pointer;
-    background-color: rgb(124, 124, 16);
-    box-shadow: 5px 5px 5px yellow;
-    color: white;
+    background-color: rgb(255, 255, 49);
+    color: grey;
+}
+.room_images_type_headingmin{
+    font-family: "Quicksand", sans-serif;
+    margin-bottom: 15px;
 }
 
 /* Mobile Devices (max width 767px) */
@@ -47,7 +52,6 @@
     }
     .room_images_type_headingmin{
         margin-bottom: 15px;
-
     }
     .room_images_type button{
         font-size: 1.1rem;

@@ -20,9 +20,11 @@
     transform: translateX(-50%);
     background-color: white;
     width: 50%;
-    padding: 5px 100px;
+    padding: 15px 100px 5px;
     border-radius: 5px;
     text-align: center;
+    font-family: "Playfair Display", sans-serif;
+    font-size: 2rem;
 }
 
 /* Mobile Devices (max width 767px) */
@@ -44,7 +46,7 @@
     .faci-main .faci-main-heading{
         font-size: 1.1rem;
         width: 80%;
-        padding:  0;
+        padding:  10px;
     }
     
 }
@@ -58,10 +60,10 @@
     .faci-main .faci-main-heading{
         font-size: 1.5rem;
         width: 80%;
-        padding:  0;
+        padding:  10px;
     }
     .container .facilities-items{
         margin: 20px;
     }
-    
 }
+    

@@ -1,7 +1,80 @@
-/* here are some components, i am also using hooks method but writenow this step is so easy */
 .home_top_btn button{
     padding: 20px;
 }
 .main-page{
     overflow: hidden;
+}
+
+/* top image text css  */
+
+.home_top_elements{
+    position: relative;
+    color: rgba(26, 25, 25, 0.1);
+    line-height: 1.5;
+}
+
+.home_top_content {
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+.home_top_heading_size:nth-child(1),
+.home_top_para{
+    font-family: "Open Sans", sans-serif;
+}
+.home_top_heading_size:nth-child(2),
+.home_top_heading_size:nth-child(3) {
+  font-size: 12vh;
+  font-family: "Playfair Display", sans-serif;
+}
+.home_top_heading_size:nth-child(2){
+    color: #FFD700;
+}
+.home_top_btn{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 80%;
+    margin-top: 40px;
+}
+.home_top_btn button {
+    font-family: "Nunito", sans-serif;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border-radius: 7px;
+    outline: none;
+    border: none;
+    background-color: #f6dc49;
+    color: black;
+    font-weight: 600;
+    /* transition: background-color 0.5s ease; */
+    transition: box-shadow 0.5s ease;
+    cursor: pointer;
+}
+.home_top_btn button:hover {
+    /* background-color: #d3b50b; */
+    /* color: black; */
+    box-shadow: 0px 4px 5px rgba(255, 255, 0, 0.7), 0px 0px 20px rgba(255, 255, 0, 0.5);
+}
+.home_bottom_text{
+    padding: 20px;
+}
+
+/* Mobile Devices (max width 767px) */
+@media screen and (max-width: 767px) {
+    .home_top_heading_size:nth-child(2),
+    .home_top_heading_size:nth-child(3) {
+      font-size: 7vh;
+    }
+    .home_top_content {
+        left: 2%;
+    }
+}
+
+/* Tablet Devices (768px to 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .home_top_content {
+        left: 4%;
+    }
 }

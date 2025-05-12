@@ -8,7 +8,7 @@ const Roomtype = () => {
   return (
     <>
       <div data-aos="fade-up" className="container">
-        <div className="row">
+        <div className="row room_type_container_main">
           <div className="col-6 d-flex">
             <div className="txt_room_type">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe deserunt et cum delectus obcaecati voluptates itaque illo ipsa, fugit optio. Saepe, accusamus! Beatae ducimus nemo aliquam voluptas impedit atque alias quod dolores? Vero veniam aperiam quos, corporis, quas a quod in nostrum commodi ratione quo ipsam distinctio quasi culpa ut officia quibusdam corrupti, fuga id labore? Placeat nesciunt obcaecati odio illum itaque, neque iste, cum ab quisquam distinctio sequi sit vero aut quas explicabo officiis dolorem repudiandae id dignissimos, quibusdam dolores cumque adipisci corporis. Recusandae quisquam consequuntur voluptate. Officiis tempore temporibus repellendus omnis veniam sapiente! Rem voluptatem nam illo? Veritatis.
@@ -20,7 +20,7 @@ const Roomtype = () => {
         </div>
       </div>
       <div data-aos="fade-up" className="container">
-        <div className="row">
+        <div className="row room_type_container_main">
           <div className="col-6 d-flex">
             <div className="txt_room_type">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe deserunt et cum delectus obcaecati voluptates itaque illo ipsa, fugit optio. Saepe, accusamus! Beatae ducimus nemo aliquam voluptas impedit atque alias quod dolores? Vero veniam aperiam quos, corporis, quas a quod in nostrum commodi ratione quo ipsam distinctio quasi culpa ut officia quibusdam corrupti, fuga id labore? Placeat nesciunt obcaecati odio illum itaque, neque iste, cum ab quisquam distinctio sequi sit vero aut quas explicabo officiis dolorem repudiandae id dignissimos, quibusdam dolores cumque adipisci corporis. Recusandae quisquam consequuntur voluptate. Officiis tempore temporibus repellendus omnis veniam sapiente! Rem voluptatem nam illo? Veritatis.

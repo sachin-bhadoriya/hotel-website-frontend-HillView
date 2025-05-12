@@ -3,6 +3,15 @@ import image9 from '../../../../assets/Images/inside/outside7.jpg'
 import '../../../CSSFile/FacilitiesCSS/Facilitiesmain.css'
 
 const Facilitiesmain = () => {
+    const facilitiiesdetails = [
+        { image: image9, head: "THE GYM" },
+        { image: image9, head: "POOL SIDE BAR" },
+        { image: image9, head: "THE SPA" },
+        { image: image9, head: "SWIMMING POOL" },
+        { image: image9, head: "RESTAURANT" },
+        { image: image9, head: "LAUNDARY" },
+    ];
+
     return (
         <>
             <div className='container text-center'>
@@ -10,11 +19,13 @@ const Facilitiesmain = () => {
                 <p data-aos="fade-up" className='facilities-para'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, nesciunt. Nulla et deleniti veniam pariatur laborum architecto soluta maxime reprehenderit temporibus dolorem, doloremque dolorum quisquam placeat a debitis aliquid. Accusantium dolorem reprehenderit pariatur cum dignissimos, vitae aliquam sequi neque exercitationem itaque eius blanditiis illo consequuntur incidunt veritatis magnam assumenda doloremque.</p>
             </div>
             <div className="container">
-                <div  data-aos="zoom-in" className='faci-main facilities-items the-gym'>
-                    <img className='the-gym-image faci-main-img' src={image9} alt="image" />
-                    <h2 className='faci-main-heading the-gym-heading'>THE GYM</h2>
-                </div>
-                <div  data-aos="zoom-in" className='faci-main facilities-items poolsidebar'>
+                {facilitiiesdetails.map((facilitiesdetail, index) => (
+                    <div key={index} data-aos="zoom-in" className='faci-main facilities-items the-gym'>
+                        <img className='the-gym-image faci-main-img' src={facilitiesdetail.image} alt="facility" />
+                        <h2 className='faci-main-heading the-gym-heading'>{facilitiesdetail.head}</h2>
+                    </div>
+                ))}
+                {/* <div  data-aos="zoom-in" className='faci-main facilities-items poolsidebar'>
                     <img className='poolsidebar-image faci-main-img' src={image9} alt="image" />
                     <h2 className='faci-main-heading poolsidebar-heading'>POOL SIDE BAR</h2>
                 </div>
@@ -33,7 +44,7 @@ const Facilitiesmain = () => {
                 <div  data-aos="zoom-in" className='faci-main facilities-items laundary'>
                     <img className='laundary-image faci-main-img' src={image9} alt="image" />
                     <h2 className='faci-main-heading laundary-heading'>LAUNDARY</h2>
-                </div>
+                </div> */}
             </div>
         </>
     )
