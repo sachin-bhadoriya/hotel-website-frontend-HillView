@@ -21,7 +21,7 @@
 
 .contact-container iframe {
   border-radius: 12px;
-  box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+  /* box-shadow: 0 0 15px rgba(212, 175, 55, 0.3); */
   width: 100%;
   max-height: 50vh;
   /* border: none; */

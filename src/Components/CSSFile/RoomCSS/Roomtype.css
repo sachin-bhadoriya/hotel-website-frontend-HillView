@@ -15,11 +15,13 @@
     padding: 50px;
 }
 .room_images_type{
-    border: 3px black solid;
+    /* border: 1px black solid; */
+    border-radius: 10px;
     font-size: 1.2rem;
     margin: 20px auto;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
 }
-.room_images_type button{
+/* .room_images_type button{
     border: none;
     outline: none;
     background-color: yellow;
@@ -35,10 +37,64 @@
     cursor: pointer;
     background-color: rgb(255, 255, 49);
     color: grey;
-}
+} */
+
+
+.room_images_type_btn {
+    font-family: "Nunito", sans-serif;
+    padding: 10px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 30px;
+    border: 2px solid #f6dc49;
+    background: transparent;
+    color: #454545;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+  }
+  
+  .room_images_type_btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: #f6dc49;
+    z-index: -1;
+    transition: width 0.4s ease;
+  }
+  
+  .room_images_type_btn:hover::before {
+    width: 100%;
+  }
+  
+  .room_images_type_btn:hover {
+    box-shadow: 0 0 15px rgba(246, 220, 73, 0.8);
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
 .room_images_type_headingmin{
-    font-family: "Quicksand", sans-serif;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
     margin-bottom: 15px;
+}
+.room_details_heading{
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 600;
 }
 
 /* Mobile Devices (max width 767px) */

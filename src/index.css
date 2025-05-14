@@ -19,15 +19,24 @@
 /* font-family: "Great Vibes", cursive; */
 /* font-family: "Prata", serif; */
 
+.Balthazar{
+  font-family: "Balthazar", serif;
+}
+/* html {
+  pointer-events: none;
+} */
 
-
-
+::selection {
+  background-color: #f6dc49;
+  color: #454545;               
+}
 
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 .container{
   width: 90%;

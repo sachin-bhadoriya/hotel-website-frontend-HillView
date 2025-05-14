@@ -1,8 +1,11 @@
 import React from 'react'
 import '../../CSSFile/Footer.css'
-import {Link } from 'react-router-dom'
+import { Link, useLocation } from "react-router-dom";
 
 const Footer = () => {
+
+  const location = useLocation();
+
   return (
     <div className='Footeritem'>
       <footer className="footer">
@@ -15,10 +18,10 @@ const Footer = () => {
           <div className="footer-section links">
             <h4>Quick Links</h4>
             <ul>
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/Facilities">Facilities</Link></li>
-              <li><Link to="/Rooms">Rooms</Link></li>
-              <li><Link to="/Contact">Contact</Link></li>
+              <li><Link className={location.pathname === '/' ? 'link-active' : 'link-deactive'} to="/">Home</Link></li>
+              <li><Link className={location.pathname === '/Facilities' ? 'link-active' : 'link-deactive'} to="/Facilities">Facilities</Link></li>
+              <li><Link className={location.pathname === '/Rooms' ? 'link-active' : 'link-deactive'} to="/Rooms">Rooms</Link></li>
+              <li><Link className={location.pathname === '/Contact' ? 'link-active' : 'link-deactive'} to="/Contact">Contact</Link></li>
             </ul>
           </div>
 

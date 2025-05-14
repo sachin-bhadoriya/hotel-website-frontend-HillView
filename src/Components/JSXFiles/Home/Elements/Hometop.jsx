@@ -1,37 +1,38 @@
 import React from 'react'
-import image1 from '../../../../assets/Images/inside/outside1.jpg'
+// import image1 from '../../../../assets/Images/inside/outside1.jpg'
+
+import facilities_top from '../../../../assets/Images/inside/facilities_top.mp4'
 import '../../../CSSFile/HomeCSS/Hometop.css'
 
 const Hometop = () => {
-  const style = {
-    background: `linear-gradient(rgba(26, 25, 25, 0.9), rgba(26, 25, 25, 0.1)), url(${image1})`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    height: '90vh',
-    width: '100%',
-    // backgroundColor:'linear-gradient(rgba(26, 25, 25, 0.1), rgba(26, 25, 25, 0.1))',
-  };
-
   return (
-    <>
-      <div data-aos="fade-up" className="home_top_elements" style={style}>
+    <div className="home_top_video_container">
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="home_top_video_bg"
+      >
+        <source src={facilities_top} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <div data-aos="fade-up" className="home_top_elements">
         <div className="home_top_content">
-        {/* all css define in app.css */}
-          <h3  data-aos="slide-right" className='home_top_heading_size'>WELCOME TO</h3>
-          <h1  data-aos="slide-right" className='home_top_heading_size'>HILLVIEW ESCAPE</h1>
-          <h3  data-aos="slide-right" className='home_top_heading_size'>HOTELS</h3>
-          <p  data-aos="slide-right" className='home_top_para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, maiores.</p>
+          <h3 data-aos="slide-right" className="home_top_heading_size">WELCOME TO</h3>
+          <h1 data-aos="slide-right" className="home_top_heading_size">HILLVIEW ESCAPE</h1>
+          <h3 data-aos="slide-right" className="home_top_heading_size">HOTELS</h3>
+          <p data-aos="slide-right" className="home_top_para">
+            Discover unmatched elegance, peaceful surroundings, and personalized luxury — all in the heart of nature.
+          </p>
         </div>
         <div className="home_top_btn">
-          <button>BOOK NOW</button>
+          <button><span>BOOK NOW</span></button>
         </div>
       </div>
-      {/* there are some classes which define already in index.css mostly are bootstrap like classes */}
-      <div data-aos="fade-up">
-        <p className='text-center home_bottom_text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, maiores.</p>
-      </div>
-    </>
-  )
-}
+    </div>
+  );
+};
 
-export default Hometop
+export default Hometop;

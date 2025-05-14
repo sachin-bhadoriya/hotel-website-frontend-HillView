@@ -1,28 +1,32 @@
 import React from 'react'
-import image4 from '../../../../assets/Images/inside/outside4.jpg'
+import room_top from '../../../../assets/Images/inside/home_top.mp4'
 import './../../../CSSFile/FacilitiesCSS/Facilitiestop.css'
 
 const Facilitiestop = () => {
-  const style = {
-    background: `linear-gradient(rgba(26, 25, 25, 0.9), rgba(26, 25, 25, 0.1)), url(${image4})`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    height: '90vh',
-    width: '100%',
-  };
-
   return (
     <>
-      <div  data-aos="fade-up" className="home_top_elements" style={style}>
-        <div className="home_top_content">
-          {/* all css define in app.css */}
-          <h3  data-aos="slide-right" className='home_top_heading_size'>WELCOME TO</h3>
-          <h1  data-aos="slide-right" className='home_top_heading_size'>HILLVIEW ESCAPE</h1>
-          <h3  data-aos="slide-right" className='home_top_heading_size'>HOTELS</h3>
-          <p  data-aos="slide-right" className='home_top_para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, maiores.</p>
-        </div>
-        <div className="home_top_btn">
-          <button>BOOK NOW</button>
+      <div className='home_top_video_container'>
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="home_top_video_bg"
+        >
+          <source src={room_top} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div data-aos="fade-up" className="home_top_elements">
+          <div className="home_top_content">
+            {/* all css define in app.css */}
+            <h3 data-aos="slide-right" className='home_top_heading_size'>WELCOME TO</h3>
+            <h1 data-aos="slide-right" className='home_top_heading_size'>HILLVIEW ESCAPE</h1>
+            <h3 data-aos="slide-right" className='home_top_heading_size'>HOTELS</h3>
+            <p data-aos="slide-right" className='home_top_para'>Discover unmatched elegance, peaceful surroundings, and personalized luxury — all in the heart of nature.</p>
+          </div>
+          <div className="home_top_btn">
+            <button><span>BOOK NOW</span></button>
+          </div>
         </div>
       </div>
     </>
