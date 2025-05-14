@@ -12,7 +12,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import './App.css'
-import ScrollToTop from "./components/JSXFiles/OtherElements/ScrollToTop";
+import ScrollToTop from "./components/JSXFiles/OtherElements/ScrollToTop.jsx";
 import NewNavbar from './Components/JSXFiles/OtherElements/NewNavbar';
 import CookieConsent from './Components/JSXFiles/OtherElements/CookieConsent';
 
